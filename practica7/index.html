@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 6 | Ibero Puebla</title>
+        <title>Proyecto | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Sensores</h1>
+                        <h1 class="fw-bolder mb-1">Proyecto final</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/foto_Emiliano.png" alt="..." />
@@ -61,11 +61,13 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 25, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Noviembre 01, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Sensores</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >PCB</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >ATTINY84</a>
 
                     </header>
                 </div>
@@ -79,85 +81,60 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">La practica 6 tuvo el objetivo de conocer y probar los diferentes tipos de sensores, existen una gran variedad de sensores y existen de diferentes tipos, los sensores digitales son aquellos que son capaces de leer solo dos estados: apagado y encendido (1 y 0), los sensores analógicos ya son capaces de leer una señal y poder mandarla en forma de voltaje para después ser interpretada dentro del programa y por últimos los inteligentes son sensores más especializadas y ocupan librerías.</p><!--Texto del resumen-->
-                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4">Desarrollo de prototipo de un dispositivo detector de obstaculos para usuarios de silla de ruedas.</p><!--Texto del resumen-->
+                        <p class="fs-6 mb-4">Al utilizar sensores en un dispositivo portátil para detectar obstáculos, estás abordando una necesidad crucial para los usuarios de sillas de ruedas. Mejorar la accesibilidad y la seguridad para las personas con discapacidad es una aplicación fantástica de la tecnología de sensores.</p>
+                        
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Los sensores son dispositivos que detectan y convierten diversas señales o estímulos del entorno en señales eléctricas o digitales para su procesamiento. Pueden medir una amplia gama de variables, como temperatura, presión, luz, movimiento, humedad, sonido, entre otros.</p>
-                        <p class="fs-6 mb-4">La practica se dividio en dos partes, la primera parte es en hacer una tabla donde se explique 30 sensores para posteriormente realizar la segunda parte que se basa en escoger 6 sensores y probarlos fisicamente.</p>
+                        <p class="fs-6 mb-4">Los sensores desempeñan un papel fundamental al actuar como elementos electrónicos capaces de percibir el entorno que nos rodea. Según el Instituto Nacional de Bioingeniería e Imágenes Biomédicas, los sensores son herramientas que detectan y responden a algún tipo de entrada del entorno físico. La capacidad de los sensores para capturar y responder a estímulos físicos, químicos o biológicos los convierte en herramientas fundamentales en la tecnología.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Sensor de sonido, sensor de flama, push botton, potenciometro, sensor ultrasonico, sensor de humedad, resistencias, cables, </p>
-                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4">Protoboard, Resistencias, Arduino UNO, Modulo de bibración, Buzzer, Potenciometro.</p>
+                        <p class="fs-6 mb-4">Sensor de distancia ultrasonico, Pantalla OLED, ATTINY84, Cables, Tabla PCB, Equipo de soldadura.</p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Se escogieron dos sensores de cada tipo para desarrollar el circuito y ponerlos a prueba.</p>
+                        <p class="fs-6 mb-4"></p>
                         <p class="fs-6 mb-4"></p>
                         
-                
-                    
-                            <!--<p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Cada uno de los diseños ya fueron predeterminados por los ejemplos.</p>
-                            <p class="fs-6 mb-4"></p>!-->
-                            
-                            <p id="Codigo">
+                            <p id="Primer paso">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Primera parte -</h2>
+                            <p class="fs-6 mb-4">En este paso, puedes observar el desarrollo del primer prototipo utilizando Arduino.</p>
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5"></h1>
-                            <p class="fs-6 mb-4">Codigo 1: botón</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_bot.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Codigo 2: sesor de flama</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_flame.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Codigo 3: fotoresistencia</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_foto.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Codigo 4: sensor de sonido</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_sonido.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Codigo 5: sensor ultrasonico</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_ultra.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4">Codigo 6: sensor de humedad</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/pra6_hume.png" alt="..." /></figure>
-                           
-                            
-
-                            
                             <p class="fs-6 mb-4"></p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/primera parte.png" alt="..." /></figure>
                             
 
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4"> </p>
-                        <p class="fs-6 mb-4">Ejemplo 1: PushButton.</p>
-                        <figure class="mb-4" align="center"><video width="25%"  controls>
-                            <source src="video/PushButton.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4">Ejemplo 2: Flame</p>
-                        <figure class="mb-4" align="center"><video width="25%"  controls>
-                            <source src="video/Flama.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4">Ejemplo 3: Fotorresistencia</p>
-                        <figure class="mb-4" align="center"><video width="30%"  controls>
-                            <source src="video/Fotorresistencia.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4">Ejemplo 4: Ruido pequeño</p>
-                        <figure class="mb-4" align="center"><video width="30%"  controls>
-                            <source src="video/RuidoPequeño.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4">Ejemplo 5: Ultrasonico</p>
-                        <figure class="mb-4" align="center"><video width="30%"  controls>
-                            <source src="video/Ultrasonico.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-6 mb-4">Ejemplo 6: Humedad y temperatura</p>
-                        <figure class="mb-4" align="center"><video width="30%"  controls>
-                            <source src="video/HumedadYTemperatura.mp4" type="video/mp4">
-                        </video></p></figure>
+                            <p id="Segunda parte">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Segunda parte -</h2>
+                            <p class="fs-6 mb-4">En este paso puedes observar el desarrollo del prototipo usando Attiny44.</p>
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5"></h1>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/segunda parte.png parte.png" alt="..." /></figure>
+
+                            <p id="Tercera parte">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Tercera parte -</h2>
+                            <p class="fs-6 mb-4">En este paso se puede observar el desarrollo del prototipo utilizando una PCB.</p>
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5"></h1>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/tercera parte.png parte.png parte.png" alt="..." /></figure>
+
+                            <p id="Tercera parte">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Cuarta parte -</h2>
+                            <p class="fs-6 mb-4">En esta parte se presento la presentación final del prototipo. </p>
+                            <p class="fs-6 mb-4">El prototipo fue demostrado y expuesto en la EXPO IBERO 2023 y se consiguio el segundo lugar. </p>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5"></h1>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/cuarta parte.png parte.png parte.png parte.png" alt="..." /></figure>
+                            
+            
+                            
+                            
+
+                        
                         
 
-                        <p id="conclusiones">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Los sensores que usamos funcionaron de buena manera, aunque si tuvimos complicaciones para enteder el funcionamiento de alguno de los sensores.</p>
-                        <p class="fs-6 mb-4">Con el conocimiento de los sensores podemos empezar a desarrollar proyectos más complejos y darles más usos para la carrera.</p>
+                    
                         
 
                         <!--<p id="referencias">
@@ -169,7 +146,9 @@
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
                         <!--<p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>!-->
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/CódigoPractica6.zip">Practica6_codigo.zip</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo: <a href="files/wearablecodeAttiny44.ino">Proyecto_codigo_Attiny84.zip</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo: <a href="files/wearablecode.ino">Proyecto_codigo_Arduino.zip</a> </p>
+                        <p class="fs-6 mb-4">Descargar diagrama: <a href="files/Schematic+view.pdf">Proyecto_Diagrama.zip</a> </p>
                         <!--<p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>-->
 
                 </div>
